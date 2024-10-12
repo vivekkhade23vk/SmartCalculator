@@ -16,6 +16,13 @@ describe('String Calculator', () => {
 describe('String Calculator for Single Number', () => {
     test('should return 1 when passed 1', () => {
       const calculator = new SmartCalculator();
-      expect(calculator.add(1)).toBe(1);
+      expect(calculator.add("1")).toBe(1);
+    });
+  });
+
+  describe('String Calculator for multiple Number', () => {
+    test('should return 6 when passed 1,5', () => {
+      const calculator = new SmartCalculator();
+      expect(calculator.add("1,5")).toBe(6);
     });
   });

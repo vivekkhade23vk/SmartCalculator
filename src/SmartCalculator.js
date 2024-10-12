@@ -3,7 +3,13 @@
 class SmartCalculator {
     add(numbers) {
         if(numbers=="") return 0;
-        return parseInt(numbers);
+        let numArr=numbers.split(",").map(Number)
+        let sum=0;
+        for(let i=0;i<numArr.length;i++){
+            sum+=numArr[i]
+        }
+        return sum;
+        
     }
   }
   
